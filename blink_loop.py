@@ -60,5 +60,7 @@ def main():
     # call number of blinks
     # note we could change to ask for the number from the user!
     blink_n(4)
-    
+
+    # and we could run it again here, or from someother program.
+
     print("Bye Bye")

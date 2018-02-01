@@ -8,3 +8,4 @@ Blog forthcoming to track what we're doing.
 ## Emoji meanings
 - :scissors: for rock, paper, scissors game
 - :sparkles: for blink project (blinking led light)
+- :loudspeaker: for sound sensor
