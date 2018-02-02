@@ -8,59 +8,35 @@
 import RPi.GPIO as GPIO
 from time import sleep
 
-
-
-LED_GPIO = 4
-
-print("Getting ready...")
-
-GPIO.setmode(GPIO.BCM)
-GPIO.setup(LED_GPIO, GPIO.OUT)
-
-'''
-Remarks:
- False = light is on
- True = light is off
-'''
-def set_led(state):
-    if state:
-        GPIO.output(LED_GPIO, False)
-    else:
-        GPIO.output(LED_GPIO, True)
-
 '''
 Remarks: number_of_times is an integer
-         calls set_led
+         speed can be a double
 '''
-def blink_n(number_of_times):
+def blink_n(LED_GPIO, number_of_times, speed):
     for n in range (0,number_of_times):
-        set_led(False)
-        print("LED is ON")
-        sleep(2)
-
-        set_led(True)
-        print("LED is OFF")
-        sleep(2)
-
-'''
-Remarks: does final on, and cleans up the GPIO
-'''
-def clean_it_up():
-    # now do the final on and cleanup.
-    set_led(False)
-    print("Turning it on finally…")
-
+        print ("iteration ", n)
+        GPIO.output(LED_GPIO, True) ## Turn on GPIO pin
+        time.sleep(speed) ## Wait
+        GPIO.output(LED_GPIO, False) ## Switch off GPIO pin
+        time.sleep(speed) ## Wait
+    print "Done" ## When loop is complete, print "Done"
     GPIO.cleanup()
+
 
 '''
 The main guts
 Remarks: calls blink_n
 '''
-def main():
-    # call number of blinks
-    # note we could change to ask for the number from the user!
-    blink_n(4)
 
-    # and we could run it again here, or from someother program.
+LED_GPIO = 4
+print("Getting ready...")
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(LED_GPIO, GPIO.OUT)
+# call number of blinks and the speed
+# note we could change to ask for the number from the user!
+blink_n(LED_GPIO,4,2)
 
-    print("Bye Bye")
+# iterations = raw_input("Enter the total number of times to blink: ")
+# speed = raw_input("Enter the length of each blink in seconds: ")
+# blink_n(LED_GPIO, int(iterations),float(speed))
+print("Bye Bye")
