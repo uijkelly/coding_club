@@ -9,3 +9,4 @@ Blog forthcoming to track what we're doing.
 - :scissors: for rock, paper, scissors game
 - :sparkles: for blink project (blinking led light)
 - :loudspeaker: for sound sensor
+- :question: for guessing game
