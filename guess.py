@@ -4,7 +4,7 @@
 #
 # students will modify so that they also:
 #     - print if the guess is too low or too high
-#     - keep track of how many guesses it took and print that when the guess is right.
+#     - keep track of how many guesses it took and print that also when the guess is right.
 
 
 #!/usr/bin/python
