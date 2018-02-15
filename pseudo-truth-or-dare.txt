@@ -1,0 +1,56 @@
+
+# PSUDOCODE
+# TRUTH or DARE
+#
+# 15 FEBRUARY 2018
+#
+# BK, MK, EK, AW, JAK
+
+PRINT "TRUTH or DARE"
+IF USER picks TRUTH
+  pick one of these randomly -- figure out how to do that later
+
+  choice 1: PRINT "Have you ever sung in the shower? (Y) or (N)"
+  	If (Y)
+  		PRINT "The Voice"
+  	If (N)
+  		PRINT "You should try it some time. It's awesome!"
+  	END GAME
+  choice 2: PRINT "Have you ever pooped your pants? (Y) or (N)"
+  	If (Y)
+  		PRINT "How embarrassing"
+  	If (N)
+  		PRINT "You should try it some time. It's awesome!"
+  	END GAME
+
+  choice 3: "would you rather eat a cow (C) or a rhino (R)"
+  	If (C)
+  		BART SIMPSON
+  	If (R)
+  		Go to jail
+  	END GAME
+
+
+ELSE IF USER picks DARE
+  pick one of these randomly -- figure out how to do that later
+  choice 1:
+  	eat the gum from under the table
+  	PRINT "You see a portal do you go in (Y) or (N)"
+  		If (Y) 
+  			Eternal life
+  		If (N)
+  			you choke and die
+  		END GAME
+  	PRINT "Lick the bottom of a muddy shoe"
+  		print one randomly:
+  			choice 1: You like it so much, it's all you eat now
+  			choice 2: swallow a worm and get a weird worm disease
+  		END GAME
+
+
+ELSE USER Enters Wrong answer
+	Pick again, (T)ruth or (D)are
+
+
+
+
