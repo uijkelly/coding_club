@@ -10,3 +10,4 @@ Blog forthcoming to track what we're doing.
 - :sparkles: for blink project (blinking led light)
 - :loudspeaker: for sound sensor
 - :question: for guessing game
+- :video_game: for truth or dare
