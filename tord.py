@@ -94,6 +94,8 @@ def main():
             shoe_idx = random.randint(0,1)
             random_shoe = shoe_scenario[shoe_idx]
             print random_shoe
+            # pause for 1 second
+            time.sleep(1)
             # eat dirt
             if shoe_idx == 0:
                 print_dirt()
